@@ -24,4 +24,4 @@ $ bower install https://github.com/yarkovaleksei/preloader.css3.git --save
 ```
 
 **Результат:**
-[Демо](http://yarkovaleksei.github.io/preloader.css3)
+[Демо](https://yarkovaleksei.github.io/preloader.css3)
