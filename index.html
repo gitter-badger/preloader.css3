@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Preloader.css3 : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://raw.githubusercontent.com/yarkovaleksei/preloader.css3/master/dist/preloader.css">
-
-    <title>Preloader.css3</title>
+    <meta charset="UTF-8">
+    <title>Preloader.css3 by yarkovaleksei</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Preloader.css3</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/yarkovaleksei/preloader.css3" class="btn">View on GitHub</a>
+      <a href="https://github.com/yarkovaleksei/preloader.css3/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/yarkovaleksei/preloader.css3/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/yarkovaleksei/preloader.css3">View on GitHub</a>
+    <section class="main-content">
+      <h1>
+<a id="preloadercss3" class="anchor" href="#preloadercss3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>preloader.css3</h1>
 
-          <h1 id="project_title">Preloader.css3</h1>
-          <h2 id="project_tagline"></h2>
+<p><strong>Установка:</strong></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/yarkovaleksei/preloader.css3/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/yarkovaleksei/preloader.css3/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<div class="highlight highlight-source-shell"><pre>$ bower install https://github.com/yarkovaleksei/preloader.css3.git --save</pre></div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <div class="preloader">
-			    <h1>Loading application...</h1>
-			    <div class="round1 round2"></div>
-		    </div>
-		  </section>
-    </div>
+<p><strong>Подключение (в тег head):</strong></p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Preloader.css3 maintained by <a href="https://github.com/yarkovaleksei">yarkovaleksei</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/preloader.css3/dist/preloader.css<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p><strong>И после открывающего тега body вставляем это:</strong></p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>preloader<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">h1</span>&gt;YOU MESSAGE ABOUT LOADING...&lt;/<span class="pl-ent">h1</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>round1 anti<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p><strong>Подключение (перед закрывающим тегом body):</strong></p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/preloader.css3/dist/preloader.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p><strong>Результат:</strong>
+<a href="http://yarkovaleksei.github.io/preloader.css3">Демо</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/yarkovaleksei/preloader.css3">Preloader.css3</a> is maintained by <a href="https://github.com/yarkovaleksei">yarkovaleksei</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
-    <script src="https://raw.githubusercontent.com/yarkovaleksei/preloader.css3/master/dist/preloader.js"></script>
+    </section>
+
+  
   </body>
 </html>
