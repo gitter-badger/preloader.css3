@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		setTimeout(function(){
 			var round1 = document.querySelector('.css3.round1');
 			round1.className += ' hidden';
+			var message = document.querySelector('h1.css3');
+			message.className += ' hidden';
 		}, 2000);
 		setTimeout(function(){
 			var left = document.querySelector('.css3.part.left');
