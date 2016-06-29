@@ -2,7 +2,7 @@
 
 **Установка:**
 ```bash
-$ bower install preloader.css3
+$ bower install preloader.css3 --save
 #или так
 $ bower install https://github.com/yarkovaleksei/preloader.css3.git --save
 ```
