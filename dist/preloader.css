@@ -118,7 +118,8 @@
 	animation: spin 1s linear infinite;
 }
 
-.css3.round1.hidden {
+.css3.round1.hidden, 
+h1.css3.hidden {
 	opacity: 0;
 }
 
