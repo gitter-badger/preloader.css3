@@ -8,13 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/yarkovaleksei/preloader.css3/master/dist/preloader.css" media="screen">
   </head>
   <body>
-    <div class="preloader">
-      <h1>Loading application...</h1>
-      <div class="round1 round2"></div>
-    </div>
     <section class="page-header">
       <h1 class="project-name">Preloader.css3</h1>
       <h2 class="project-tagline"></h2>
@@ -31,15 +26,19 @@
 
 <div class="highlight highlight-source-shell"><pre>$ bower install https://github.com/yarkovaleksei/preloader.css3.git --save</pre></div>
 
-<p><strong>Подключение (в тег head):</strong></p>
+<p><strong>Подключение (перед закрывающим тегом head):</strong></p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/preloader.css3/dist/preloader.css<span class="pl-pds">"</span></span>&gt;</pre></div>
 
-<p><strong>И после открывающего тега body вставляем это:</strong></p>
+<p><strong>И после открывающего тега body вставляем html блок:</strong></p>
 
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>preloader<span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent">h1</span>&gt;YOU MESSAGE ABOUT LOADING...&lt;/<span class="pl-ent">h1</span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>round1 anti<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>css3 container<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>css3 wrapper<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>css3 part left<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">h1</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>css3<span class="pl-pds">"</span></span>&gt;Loading application... Please wait&lt;/<span class="pl-ent">h1</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>css3 round1 round2<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>css3 part right<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
 <p><strong>Подключение (перед закрывающим тегом body):</strong></p>
@@ -47,7 +46,7 @@
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>bower_components/preloader.css3/dist/preloader.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <p><strong>Результат:</strong>
-<a href="http://yarkovaleksei.github.io/preloader.css3">Демо</a></p>
+<a href="https://yarkovaleksei.github.io/preloader.css3">Демо</a></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/yarkovaleksei/preloader.css3">Preloader.css3</a> is maintained by <a href="https://github.com/yarkovaleksei">yarkovaleksei</a>.</span>
@@ -57,6 +56,6 @@
 
     </section>
 
-    <script src="https://cdn.rawgit.com/yarkovaleksei/preloader.css3/master/dist/preloader.js"></script>
+  
   </body>
 </html>
