@@ -5,16 +5,20 @@
 $ bower install https://github.com/yarkovaleksei/preloader.css3.git --save
 ```
 
-**Подключение (в тег head):**
+**Подключение (перед закрывающим тегом head):**
 ```html
 <link rel="stylesheet" href="bower_components/preloader.css3/dist/preloader.css">
 ```
 
-**И после открывающего тега body вставляем это:**
+**И после открывающего тега body вставляем html блок:**
 ```html
-<div class="preloader">
-    <h1>YOU MESSAGE ABOUT LOADING...</h1>
-    <div class="round1 anti"></div>
+<div class="css3 container">
+    <div class="css3 wrapper">
+        <div class="css3 part left"></div>
+        <h1 class="css3">Loading application... Please wait</h1>
+        <div class="css3 round1 round2"></div>
+        <div class="css3 part right"></div>
+    </div>
 </div>
 ```
 

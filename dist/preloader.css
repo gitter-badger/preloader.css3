@@ -1,39 +1,90 @@
-html, 
-body {
-	margin: 0px;
-	padding: 0px;
+.css3.container {
+	position: fixed;
+	display:table;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	font: 1em/1.6em sans-serif;
+	color: #ffffff;
+	margin: 0px auto;
+	text-align: center;
+	z-index: 10;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-o-transition: opacity 2s;
+	transition: opacity 2s;
+	opacity: 1;
 }
 
-.hidden {
+.css3 h1 {
+	line-height: 150%;
+}
+
+.css3.wrapper {
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.css3.container.fadeOut {
+	opacity: 0;
 	display: none;
 }
 
-.preloader {
-	width: 100vw;
-	height: 100vh;
-	display: table-cell;
-	vertical-align: middle;
-	margin: 0px auto;
-	font: 1em/1.6em sans-serif;
-	color: #ffffff;
-	background: #222222;
-	text-align: center;
+.css3.part {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: #222;
+	z-index: -1;
+	-webkit-transition: all 5s ease;
+	-moz-transition: all 5s ease;
+	-o-transition: all 5s ease;
+	transition: all 5s ease;
 }
 
-.round1, 
-.round1:after, 
-.round1:before {
+.css3.part.left {
+	left: 0;
+}
+
+.css3.part.right {
+	right: 0;
+}
+
+.css3.part.left.out {
+	-webkit-transform: translate(-9999px, 0px);
+	-moz-transform: translate(-9999px, 0px);
+	-o-transform: translate(-9999px, 0px);
+	-ms-transform: translate(-9999px, 0px);
+	transform: translate(-9999px, 0px);
+}
+
+.css3.part.right.out {
+	-webkit-transform: translate(9999px, 0px);
+	-moz-transform: translate(9999px, 0px);
+	-o-transform: translate(9999px, 0px);
+	-ms-transform: translate(9999px, 0px);
+	transform: translate(9999px, 0px);
+}
+
+.css3.round1, 
+.css3.round1:after, 
+.css3.round1:before {
 	border-radius: 50%;
 	border: 3px solid transparent;
 }
 
-.round1:after, 
-.round1:before {
+.css3.round1:after, 
+.css3.round1:before {
 	position: absolute;
 	content: '';
 }
 
-.round1 {
+.css3.round1 {
 	width: 150px;
 	height: 150px;
 	border-top-color: #bac900;
@@ -41,9 +92,13 @@ body {
 	-webkit-animation: spin 1s linear infinite;
 	animation: spin 1s linear infinite;
 	margin: 50px auto;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
 }
 
-.round1:after {
+.css3.round1:after {
 	top: 7px;
 	bottom: 7px;
 	left: 7px;
@@ -53,7 +108,7 @@ body {
 	animation: spin 2s linear infinite;
 }
 
-.round1:before {
+.css3.round1:before {
 	top: 17px;
 	bottom: 17px;
 	left: 17px;
@@ -63,7 +118,11 @@ body {
 	animation: spin 1s linear infinite;
 }
 
-.round2:before {
+.css3.round1.hidden {
+	opacity: 0;
+}
+
+.css3.round2:before {
 	-webkit-animation: antispin 0.3s linear infinite;
 	animation: antispin 0.3s linear infinite;
 	border-bottom-color: #ff1400;
